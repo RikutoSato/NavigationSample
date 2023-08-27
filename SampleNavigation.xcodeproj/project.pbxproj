@@ -13,6 +13,7 @@
 		A8FB3F312A9B131A00AE83E9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A8FB3F302A9B131A00AE83E9 /* Preview Assets.xcassets */; };
 		A8FB3F382A9B132900AE83E9 /* NavigationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8FB3F372A9B132900AE83E9 /* NavigationManager.swift */; };
 		A8FB3F3A2A9B134900AE83E9 /* Views.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8FB3F392A9B134900AE83E9 /* Views.swift */; };
+		A8FB3F3C2A9B1D0200AE83E9 /* ZView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8FB3F3B2A9B1D0200AE83E9 /* ZView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		A8FB3F302A9B131A00AE83E9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A8FB3F372A9B132900AE83E9 /* NavigationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationManager.swift; sourceTree = "<group>"; };
 		A8FB3F392A9B134900AE83E9 /* Views.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Views.swift; sourceTree = "<group>"; };
+		A8FB3F3B2A9B1D0200AE83E9 /* ZView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 				A8FB3F292A9B131900AE83E9 /* SampleNavigationApp.swift */,
 				A8FB3F2B2A9B131900AE83E9 /* ContentView.swift */,
 				A8FB3F392A9B134900AE83E9 /* Views.swift */,
+				A8FB3F3B2A9B1D0200AE83E9 /* ZView.swift */,
 				A8FB3F372A9B132900AE83E9 /* NavigationManager.swift */,
 				A8FB3F2D2A9B131A00AE83E9 /* Assets.xcassets */,
 				A8FB3F2F2A9B131A00AE83E9 /* Preview Content */,
@@ -144,6 +147,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A8FB3F2C2A9B131900AE83E9 /* ContentView.swift in Sources */,
+				A8FB3F3C2A9B1D0200AE83E9 /* ZView.swift in Sources */,
 				A8FB3F2A2A9B131900AE83E9 /* SampleNavigationApp.swift in Sources */,
 				A8FB3F3A2A9B134900AE83E9 /* Views.swift in Sources */,
 				A8FB3F382A9B132900AE83E9 /* NavigationManager.swift in Sources */,

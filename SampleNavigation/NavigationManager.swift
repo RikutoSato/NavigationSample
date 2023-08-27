@@ -7,6 +7,12 @@
 
 import SwiftUI
 
+/*
+ ▫️画面を追加するとき
+ ①ShowViewに追加する
+ ②navigationDestinationに追加する。
+ */
+
 class NavigationManager: ObservableObject {
     @Published var path: [ShowView] = []
     var currentViewModel: Any?
@@ -21,8 +27,8 @@ struct NavigationDestinationModifier: ViewModifier {
     
     func body(content: Content) -> some View {
         content
-            .navigationDestination(for: ShowView.self) { showView in
-                // let viewModel = navigationManager.currentViewModel
+            .navigationDestination(for: ShowView.self) { showView in // ②
+                 let viewModel = navigationManager.currentViewModel
                 
                 switch showView {
                 case .aView:
@@ -33,14 +39,18 @@ struct NavigationDestinationModifier: ViewModifier {
                     CView()
                 case .dView:
                     DView()
+                case .zView:
+                    ZView(viewModel: viewModel as! ZViewModel)
                 }
             }
     }
 }
 
+// ①
 enum ShowView: Hashable {
     case aView
     case bView
     case cView
     case dView
+    case zView
 }
