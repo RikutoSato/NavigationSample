@@ -17,6 +17,7 @@ class NavigationManager: ObservableObject {
     @Published var path: [ShowView] = []
     var currentViewModel: Any?
     
+    // ここでViewModelをセットする。
     func setCurrentViewModel(_ viewModel: Any) {
         currentViewModel = viewModel
     }
@@ -40,6 +41,7 @@ struct NavigationDestinationModifier: ViewModifier {
                 case .dView:
                     DView()
                 case .zView:
+                    // 渡したい値がある場合はViewModelを返して渡す。
                     ZView(viewModel: viewModel as! ZViewModel)
                 }
             }
